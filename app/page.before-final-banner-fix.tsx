@@ -7,7 +7,6 @@ const projects = [
   {
     id: "01",
     title: "QualiMind AI",
-    banner: "/projects/qualimind-banner.png",
     category: "AI + QUALITY",
     year: "2026",
     description:
@@ -20,7 +19,6 @@ const projects = [
   {
     id: "02",
     title: "Nirvira",
-    banner: "/projects/nirvira-banner.png",
     category: "AI OPERATING SYSTEM",
     year: "2026",
     description:
@@ -495,17 +493,7 @@ export default function Home() {
               whileHover={{ y: -7 }}
               onClick={() => setSelected(project)}
             >
-              <div className="project-banner">
-  <img
-    src={project.banner}
-    alt={`${project.title} project poster`}
-  />
-  <div className="banner-overlay">
-    <span>{project.category}</span>
-    <strong>{project.title}</strong>
-    <small>OPEN PROJECT ↗</small>
-  </div>
-</div><div className="project-visual-old">
+              <div className="project-visual">
                 <div className="project-grid" />
                 <div className="project-window">
                   <small>{project.id}</small>
@@ -777,7 +765,5 @@ export default function Home() {
     </main>
   );
 }
-
-
 
 

@@ -6,8 +6,7 @@ import { useEffect, useState } from "react";
 const projects = [
   {
     id: "01",
-    title: "QualiMind AI",
-    banner: "/projects/qualimind-banner.png",
+    title: "QualiMind AI",`r`n    banner: "/projects/qualimind-banner.png",
     category: "AI + QUALITY",
     year: "2026",
     description:
@@ -19,8 +18,7 @@ const projects = [
   },
   {
     id: "02",
-    title: "Nirvira",
-    banner: "/projects/nirvira-banner.png",
+    title: "Nirvira",`r`n    banner: "/projects/nirvira-banner.png",
     category: "AI OPERATING SYSTEM",
     year: "2026",
     description:
@@ -777,7 +775,6 @@ export default function Home() {
     </main>
   );
 }
-
 
 
 
